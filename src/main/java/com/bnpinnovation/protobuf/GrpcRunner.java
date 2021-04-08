@@ -1,6 +1,7 @@
 package com.bnpinnovation.protobuf;
 
 import com.bnpinnovation.protobuf.service.SCVService;
+import io.grpc.BindableService;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,7 @@ public class GrpcRunner implements ApplicationRunner {
     @Autowired
     GrpcRunner(SCVService scvRPCService) {
         SERVER = ServerBuilder.forPort(PORT)
-                .addService(scvRPCService)
+                .addService( scvRPCService)
                 .build();
     }
 

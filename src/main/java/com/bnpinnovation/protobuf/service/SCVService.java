@@ -1,5 +1,7 @@
 package com.bnpinnovation.protobuf.service;
 
+
+import static com.bnpinnovation.proto.SCVServiceGrpc.SCVServiceImplBase;
 import com.bnpinnovation.proto.ScvInfo;
 import com.bnpinnovation.protobuf.dto.SCVDto;
 import org.springframework.stereotype.Service;
@@ -8,7 +10,7 @@ public interface SCVService {
     Long create(SCVDto.Request request);
 
     @Service
-    class Default implements SCVService {
+    class Default extends SCVServiceImplBase implements SCVService {
 
         @Override
         public Long create(SCVDto.Request request) {
