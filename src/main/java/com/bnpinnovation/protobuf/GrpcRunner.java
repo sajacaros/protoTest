@@ -1,5 +1,6 @@
 package com.bnpinnovation.protobuf;
 
+import com.bnpinnovation.proto.SCVServiceGrpc;
 import com.bnpinnovation.protobuf.service.SCVService;
 import io.grpc.BindableService;
 import io.grpc.Server;
@@ -10,14 +11,15 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 @Component
+
 public class GrpcRunner implements ApplicationRunner {
     private static final int PORT = 8081;
-    private static final Server SERVER;
+    private static Server SERVER = null;
 
     @Autowired
-    GrpcRunner(SCVService scvRPCService) {
-        SERVER = ServerBuilder.forPort(PORT)
-                .addService( scvRPCService)
+    GrpcRunner(SCVServiceGrpc.SCVServiceImplBase scvRPCService) {
+        this.SERVER = ServerBuilder.forPort(PORT)
+                .addService( scvRPCService )
                 .build();
     }
 
@@ -25,7 +27,9 @@ public class GrpcRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        SERVER.start();
+        if(SERVER != null) {
+            SERVER.start();
+        }
     }
 
 }
