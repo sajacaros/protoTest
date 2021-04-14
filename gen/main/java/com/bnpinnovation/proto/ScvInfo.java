@@ -14,8 +14,8 @@ public final class ScvInfo {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
-  public interface SCVOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:SCV)
+  public interface SCVRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:SCVRequest)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -55,18 +55,18 @@ public final class ScvInfo {
         getEmailBytes();
   }
   /**
-   * Protobuf type {@code SCV}
+   * Protobuf type {@code SCVRequest}
    */
-  public static final class SCV extends
+  public static final class SCVRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:SCV)
-      SCVOrBuilder {
+      // @@protoc_insertion_point(message_implements:SCVRequest)
+      SCVRequestOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use SCV.newBuilder() to construct.
-    private SCV(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use SCVRequest.newBuilder() to construct.
+    private SCVRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private SCV() {
+    private SCVRequest() {
       username_ = "";
       password_ = "";
       email_ = "";
@@ -76,7 +76,7 @@ public final class ScvInfo {
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new SCV();
+      return new SCVRequest();
     }
 
     @java.lang.Override
@@ -84,7 +84,7 @@ public final class ScvInfo {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private SCV(
+    private SCVRequest(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -141,15 +141,15 @@ public final class ScvInfo {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.bnpinnovation.proto.ScvInfo.internal_static_SCV_descriptor;
+      return com.bnpinnovation.proto.ScvInfo.internal_static_SCVRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.bnpinnovation.proto.ScvInfo.internal_static_SCV_fieldAccessorTable
+      return com.bnpinnovation.proto.ScvInfo.internal_static_SCVRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.bnpinnovation.proto.ScvInfo.SCV.class, com.bnpinnovation.proto.ScvInfo.SCV.Builder.class);
+              com.bnpinnovation.proto.ScvInfo.SCVRequest.class, com.bnpinnovation.proto.ScvInfo.SCVRequest.Builder.class);
     }
 
     public static final int USERNAME_FIELD_NUMBER = 1;
@@ -317,10 +317,10 @@ public final class ScvInfo {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.bnpinnovation.proto.ScvInfo.SCV)) {
+      if (!(obj instanceof com.bnpinnovation.proto.ScvInfo.SCVRequest)) {
         return super.equals(obj);
       }
-      com.bnpinnovation.proto.ScvInfo.SCV other = (com.bnpinnovation.proto.ScvInfo.SCV) obj;
+      com.bnpinnovation.proto.ScvInfo.SCVRequest other = (com.bnpinnovation.proto.ScvInfo.SCVRequest) obj;
 
       if (!getUsername()
           .equals(other.getUsername())) return false;
@@ -350,69 +350,69 @@ public final class ScvInfo {
       return hash;
     }
 
-    public static com.bnpinnovation.proto.ScvInfo.SCV parseFrom(
+    public static com.bnpinnovation.proto.ScvInfo.SCVRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.bnpinnovation.proto.ScvInfo.SCV parseFrom(
+    public static com.bnpinnovation.proto.ScvInfo.SCVRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.bnpinnovation.proto.ScvInfo.SCV parseFrom(
+    public static com.bnpinnovation.proto.ScvInfo.SCVRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.bnpinnovation.proto.ScvInfo.SCV parseFrom(
+    public static com.bnpinnovation.proto.ScvInfo.SCVRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.bnpinnovation.proto.ScvInfo.SCV parseFrom(byte[] data)
+    public static com.bnpinnovation.proto.ScvInfo.SCVRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.bnpinnovation.proto.ScvInfo.SCV parseFrom(
+    public static com.bnpinnovation.proto.ScvInfo.SCVRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.bnpinnovation.proto.ScvInfo.SCV parseFrom(java.io.InputStream input)
+    public static com.bnpinnovation.proto.ScvInfo.SCVRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.bnpinnovation.proto.ScvInfo.SCV parseFrom(
+    public static com.bnpinnovation.proto.ScvInfo.SCVRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.bnpinnovation.proto.ScvInfo.SCV parseDelimitedFrom(java.io.InputStream input)
+    public static com.bnpinnovation.proto.ScvInfo.SCVRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.bnpinnovation.proto.ScvInfo.SCV parseDelimitedFrom(
+    public static com.bnpinnovation.proto.ScvInfo.SCVRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.bnpinnovation.proto.ScvInfo.SCV parseFrom(
+    public static com.bnpinnovation.proto.ScvInfo.SCVRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.bnpinnovation.proto.ScvInfo.SCV parseFrom(
+    public static com.bnpinnovation.proto.ScvInfo.SCVRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -425,7 +425,7 @@ public final class ScvInfo {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.bnpinnovation.proto.ScvInfo.SCV prototype) {
+    public static Builder newBuilder(com.bnpinnovation.proto.ScvInfo.SCVRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -441,26 +441,26 @@ public final class ScvInfo {
       return builder;
     }
     /**
-     * Protobuf type {@code SCV}
+     * Protobuf type {@code SCVRequest}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:SCV)
-        com.bnpinnovation.proto.ScvInfo.SCVOrBuilder {
+        // @@protoc_insertion_point(builder_implements:SCVRequest)
+        com.bnpinnovation.proto.ScvInfo.SCVRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.bnpinnovation.proto.ScvInfo.internal_static_SCV_descriptor;
+        return com.bnpinnovation.proto.ScvInfo.internal_static_SCVRequest_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.bnpinnovation.proto.ScvInfo.internal_static_SCV_fieldAccessorTable
+        return com.bnpinnovation.proto.ScvInfo.internal_static_SCVRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.bnpinnovation.proto.ScvInfo.SCV.class, com.bnpinnovation.proto.ScvInfo.SCV.Builder.class);
+                com.bnpinnovation.proto.ScvInfo.SCVRequest.class, com.bnpinnovation.proto.ScvInfo.SCVRequest.Builder.class);
       }
 
-      // Construct using com.bnpinnovation.proto.ScvInfo.SCV.newBuilder()
+      // Construct using com.bnpinnovation.proto.ScvInfo.SCVRequest.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -490,17 +490,17 @@ public final class ScvInfo {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.bnpinnovation.proto.ScvInfo.internal_static_SCV_descriptor;
+        return com.bnpinnovation.proto.ScvInfo.internal_static_SCVRequest_descriptor;
       }
 
       @java.lang.Override
-      public com.bnpinnovation.proto.ScvInfo.SCV getDefaultInstanceForType() {
-        return com.bnpinnovation.proto.ScvInfo.SCV.getDefaultInstance();
+      public com.bnpinnovation.proto.ScvInfo.SCVRequest getDefaultInstanceForType() {
+        return com.bnpinnovation.proto.ScvInfo.SCVRequest.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.bnpinnovation.proto.ScvInfo.SCV build() {
-        com.bnpinnovation.proto.ScvInfo.SCV result = buildPartial();
+      public com.bnpinnovation.proto.ScvInfo.SCVRequest build() {
+        com.bnpinnovation.proto.ScvInfo.SCVRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -508,8 +508,8 @@ public final class ScvInfo {
       }
 
       @java.lang.Override
-      public com.bnpinnovation.proto.ScvInfo.SCV buildPartial() {
-        com.bnpinnovation.proto.ScvInfo.SCV result = new com.bnpinnovation.proto.ScvInfo.SCV(this);
+      public com.bnpinnovation.proto.ScvInfo.SCVRequest buildPartial() {
+        com.bnpinnovation.proto.ScvInfo.SCVRequest result = new com.bnpinnovation.proto.ScvInfo.SCVRequest(this);
         result.username_ = username_;
         result.password_ = password_;
         result.email_ = email_;
@@ -551,16 +551,16 @@ public final class ScvInfo {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.bnpinnovation.proto.ScvInfo.SCV) {
-          return mergeFrom((com.bnpinnovation.proto.ScvInfo.SCV)other);
+        if (other instanceof com.bnpinnovation.proto.ScvInfo.SCVRequest) {
+          return mergeFrom((com.bnpinnovation.proto.ScvInfo.SCVRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.bnpinnovation.proto.ScvInfo.SCV other) {
-        if (other == com.bnpinnovation.proto.ScvInfo.SCV.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.bnpinnovation.proto.ScvInfo.SCVRequest other) {
+        if (other == com.bnpinnovation.proto.ScvInfo.SCVRequest.getDefaultInstance()) return this;
         if (!other.getUsername().isEmpty()) {
           username_ = other.username_;
           onChanged();
@@ -588,11 +588,11 @@ public final class ScvInfo {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.bnpinnovation.proto.ScvInfo.SCV parsedMessage = null;
+        com.bnpinnovation.proto.ScvInfo.SCVRequest parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.bnpinnovation.proto.ScvInfo.SCV) e.getUnfinishedMessage();
+          parsedMessage = (com.bnpinnovation.proto.ScvInfo.SCVRequest) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -842,51 +842,774 @@ public final class ScvInfo {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:SCV)
+      // @@protoc_insertion_point(builder_scope:SCVRequest)
     }
 
-    // @@protoc_insertion_point(class_scope:SCV)
-    private static final com.bnpinnovation.proto.ScvInfo.SCV DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:SCVRequest)
+    private static final com.bnpinnovation.proto.ScvInfo.SCVRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.bnpinnovation.proto.ScvInfo.SCV();
+      DEFAULT_INSTANCE = new com.bnpinnovation.proto.ScvInfo.SCVRequest();
     }
 
-    public static com.bnpinnovation.proto.ScvInfo.SCV getDefaultInstance() {
+    public static com.bnpinnovation.proto.ScvInfo.SCVRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<SCV>
-        PARSER = new com.google.protobuf.AbstractParser<SCV>() {
+    private static final com.google.protobuf.Parser<SCVRequest>
+        PARSER = new com.google.protobuf.AbstractParser<SCVRequest>() {
       @java.lang.Override
-      public SCV parsePartialFrom(
+      public SCVRequest parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new SCV(input, extensionRegistry);
+        return new SCVRequest(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<SCV> parser() {
+    public static com.google.protobuf.Parser<SCVRequest> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<SCV> getParserForType() {
+    public com.google.protobuf.Parser<SCVRequest> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.bnpinnovation.proto.ScvInfo.SCV getDefaultInstanceForType() {
+    public com.bnpinnovation.proto.ScvInfo.SCVRequest getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface SCVResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:SCVResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string username = 1;</code>
+     * @return The username.
+     */
+    java.lang.String getUsername();
+    /**
+     * <code>string username = 1;</code>
+     * @return The bytes for username.
+     */
+    com.google.protobuf.ByteString
+        getUsernameBytes();
+
+    /**
+     * <code>string email = 2;</code>
+     * @return The email.
+     */
+    java.lang.String getEmail();
+    /**
+     * <code>string email = 2;</code>
+     * @return The bytes for email.
+     */
+    com.google.protobuf.ByteString
+        getEmailBytes();
+  }
+  /**
+   * Protobuf type {@code SCVResponse}
+   */
+  public static final class SCVResponse extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:SCVResponse)
+      SCVResponseOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use SCVResponse.newBuilder() to construct.
+    private SCVResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private SCVResponse() {
+      username_ = "";
+      email_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new SCVResponse();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private SCVResponse(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              username_ = s;
+              break;
+            }
+            case 18: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              email_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.bnpinnovation.proto.ScvInfo.internal_static_SCVResponse_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.bnpinnovation.proto.ScvInfo.internal_static_SCVResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.bnpinnovation.proto.ScvInfo.SCVResponse.class, com.bnpinnovation.proto.ScvInfo.SCVResponse.Builder.class);
+    }
+
+    public static final int USERNAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object username_;
+    /**
+     * <code>string username = 1;</code>
+     * @return The username.
+     */
+    @java.lang.Override
+    public java.lang.String getUsername() {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        username_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string username = 1;</code>
+     * @return The bytes for username.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getUsernameBytes() {
+      java.lang.Object ref = username_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        username_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int EMAIL_FIELD_NUMBER = 2;
+    private volatile java.lang.Object email_;
+    /**
+     * <code>string email = 2;</code>
+     * @return The email.
+     */
+    @java.lang.Override
+    public java.lang.String getEmail() {
+      java.lang.Object ref = email_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        email_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string email = 2;</code>
+     * @return The bytes for email.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getEmailBytes() {
+      java.lang.Object ref = email_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        email_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getUsernameBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, username_);
+      }
+      if (!getEmailBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, email_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getUsernameBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, username_);
+      }
+      if (!getEmailBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, email_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.bnpinnovation.proto.ScvInfo.SCVResponse)) {
+        return super.equals(obj);
+      }
+      com.bnpinnovation.proto.ScvInfo.SCVResponse other = (com.bnpinnovation.proto.ScvInfo.SCVResponse) obj;
+
+      if (!getUsername()
+          .equals(other.getUsername())) return false;
+      if (!getEmail()
+          .equals(other.getEmail())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + USERNAME_FIELD_NUMBER;
+      hash = (53 * hash) + getUsername().hashCode();
+      hash = (37 * hash) + EMAIL_FIELD_NUMBER;
+      hash = (53 * hash) + getEmail().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.bnpinnovation.proto.ScvInfo.SCVResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.bnpinnovation.proto.ScvInfo.SCVResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.bnpinnovation.proto.ScvInfo.SCVResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.bnpinnovation.proto.ScvInfo.SCVResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.bnpinnovation.proto.ScvInfo.SCVResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.bnpinnovation.proto.ScvInfo.SCVResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.bnpinnovation.proto.ScvInfo.SCVResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.bnpinnovation.proto.ScvInfo.SCVResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.bnpinnovation.proto.ScvInfo.SCVResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.bnpinnovation.proto.ScvInfo.SCVResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.bnpinnovation.proto.ScvInfo.SCVResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.bnpinnovation.proto.ScvInfo.SCVResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.bnpinnovation.proto.ScvInfo.SCVResponse prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code SCVResponse}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:SCVResponse)
+        com.bnpinnovation.proto.ScvInfo.SCVResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.bnpinnovation.proto.ScvInfo.internal_static_SCVResponse_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.bnpinnovation.proto.ScvInfo.internal_static_SCVResponse_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.bnpinnovation.proto.ScvInfo.SCVResponse.class, com.bnpinnovation.proto.ScvInfo.SCVResponse.Builder.class);
+      }
+
+      // Construct using com.bnpinnovation.proto.ScvInfo.SCVResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        username_ = "";
+
+        email_ = "";
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.bnpinnovation.proto.ScvInfo.internal_static_SCVResponse_descriptor;
+      }
+
+      @java.lang.Override
+      public com.bnpinnovation.proto.ScvInfo.SCVResponse getDefaultInstanceForType() {
+        return com.bnpinnovation.proto.ScvInfo.SCVResponse.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.bnpinnovation.proto.ScvInfo.SCVResponse build() {
+        com.bnpinnovation.proto.ScvInfo.SCVResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.bnpinnovation.proto.ScvInfo.SCVResponse buildPartial() {
+        com.bnpinnovation.proto.ScvInfo.SCVResponse result = new com.bnpinnovation.proto.ScvInfo.SCVResponse(this);
+        result.username_ = username_;
+        result.email_ = email_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.bnpinnovation.proto.ScvInfo.SCVResponse) {
+          return mergeFrom((com.bnpinnovation.proto.ScvInfo.SCVResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.bnpinnovation.proto.ScvInfo.SCVResponse other) {
+        if (other == com.bnpinnovation.proto.ScvInfo.SCVResponse.getDefaultInstance()) return this;
+        if (!other.getUsername().isEmpty()) {
+          username_ = other.username_;
+          onChanged();
+        }
+        if (!other.getEmail().isEmpty()) {
+          email_ = other.email_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.bnpinnovation.proto.ScvInfo.SCVResponse parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.bnpinnovation.proto.ScvInfo.SCVResponse) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private java.lang.Object username_ = "";
+      /**
+       * <code>string username = 1;</code>
+       * @return The username.
+       */
+      public java.lang.String getUsername() {
+        java.lang.Object ref = username_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          username_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string username = 1;</code>
+       * @return The bytes for username.
+       */
+      public com.google.protobuf.ByteString
+          getUsernameBytes() {
+        java.lang.Object ref = username_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          username_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string username = 1;</code>
+       * @param value The username to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUsername(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        username_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string username = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUsername() {
+        
+        username_ = getDefaultInstance().getUsername();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string username = 1;</code>
+       * @param value The bytes for username to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUsernameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        username_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object email_ = "";
+      /**
+       * <code>string email = 2;</code>
+       * @return The email.
+       */
+      public java.lang.String getEmail() {
+        java.lang.Object ref = email_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          email_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string email = 2;</code>
+       * @return The bytes for email.
+       */
+      public com.google.protobuf.ByteString
+          getEmailBytes() {
+        java.lang.Object ref = email_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          email_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string email = 2;</code>
+       * @param value The email to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEmail(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        email_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string email = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEmail() {
+        
+        email_ = getDefaultInstance().getEmail();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string email = 2;</code>
+       * @param value The bytes for email to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEmailBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        email_ = value;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:SCVResponse)
+    }
+
+    // @@protoc_insertion_point(class_scope:SCVResponse)
+    private static final com.bnpinnovation.proto.ScvInfo.SCVResponse DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.bnpinnovation.proto.ScvInfo.SCVResponse();
+    }
+
+    public static com.bnpinnovation.proto.ScvInfo.SCVResponse getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<SCVResponse>
+        PARSER = new com.google.protobuf.AbstractParser<SCVResponse>() {
+      @java.lang.Override
+      public SCVResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new SCVResponse(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<SCVResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<SCVResponse> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.bnpinnovation.proto.ScvInfo.SCVResponse getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_SCV_descriptor;
+    internal_static_SCVRequest_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_SCV_fieldAccessorTable;
+      internal_static_SCVRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_SCVResponse_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_SCVResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -897,23 +1620,31 @@ public final class ScvInfo {
   static {
     java.lang.String[] descriptorData = {
       "\n\rscvInfo.proto\032\033google/protobuf/empty.p" +
-      "roto\"8\n\003SCV\022\020\n\010username\030\001 \001(\t\022\020\n\010passwor" +
-      "d\030\002 \001(\t\022\r\n\005email\030\003 \001(\t2`\n\nSCVService\022(\n\006" +
-      "NewSCV\022\004.SCV\032\026.google.protobuf.Empty\"\000\022(" +
-      "\n\006GetSCV\022\026.google.protobuf.Empty\032\004.SCV\"\000" +
-      "B\033\n\027com.bnpinnovation.protoH\003b\006proto3"
+      "roto\"?\n\nSCVRequest\022\020\n\010username\030\001 \001(\t\022\020\n\010" +
+      "password\030\002 \001(\t\022\r\n\005email\030\003 \001(\t\".\n\013SCVResp" +
+      "onse\022\020\n\010username\030\001 \001(\t\022\r\n\005email\030\002 \001(\t2o\n" +
+      "\nSCVService\022/\n\006NewSCV\022\013.SCVRequest\032\026.goo" +
+      "gle.protobuf.Empty\"\000\0220\n\006GetSCV\022\026.google." +
+      "protobuf.Empty\032\014.SCVResponse\"\000B\033\n\027com.bn" +
+      "pinnovation.protoH\003b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.protobuf.EmptyProto.getDescriptor(),
         });
-    internal_static_SCV_descriptor =
+    internal_static_SCVRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_SCV_fieldAccessorTable = new
+    internal_static_SCVRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_SCV_descriptor,
+        internal_static_SCVRequest_descriptor,
         new java.lang.String[] { "Username", "Password", "Email", });
+    internal_static_SCVResponse_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_SCVResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_SCVResponse_descriptor,
+        new java.lang.String[] { "Username", "Email", });
     com.google.protobuf.EmptyProto.getDescriptor();
   }
 

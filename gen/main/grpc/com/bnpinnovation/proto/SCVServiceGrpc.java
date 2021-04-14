@@ -5,7 +5,7 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
 /**
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.36.1)",
+    value = "by gRPC proto compiler (version 1.37.0)",
     comments = "Source: scvInfo.proto")
 public final class SCVServiceGrpc {
 
@@ -14,27 +14,27 @@ public final class SCVServiceGrpc {
   public static final String SERVICE_NAME = "SCVService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<com.bnpinnovation.proto.ScvInfo.SCV,
+  private static volatile io.grpc.MethodDescriptor<com.bnpinnovation.proto.ScvInfo.SCVRequest,
       com.google.protobuf.Empty> getNewSCVMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "NewSCV",
-      requestType = com.bnpinnovation.proto.ScvInfo.SCV.class,
+      requestType = com.bnpinnovation.proto.ScvInfo.SCVRequest.class,
       responseType = com.google.protobuf.Empty.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.bnpinnovation.proto.ScvInfo.SCV,
+  public static io.grpc.MethodDescriptor<com.bnpinnovation.proto.ScvInfo.SCVRequest,
       com.google.protobuf.Empty> getNewSCVMethod() {
-    io.grpc.MethodDescriptor<com.bnpinnovation.proto.ScvInfo.SCV, com.google.protobuf.Empty> getNewSCVMethod;
+    io.grpc.MethodDescriptor<com.bnpinnovation.proto.ScvInfo.SCVRequest, com.google.protobuf.Empty> getNewSCVMethod;
     if ((getNewSCVMethod = SCVServiceGrpc.getNewSCVMethod) == null) {
       synchronized (SCVServiceGrpc.class) {
         if ((getNewSCVMethod = SCVServiceGrpc.getNewSCVMethod) == null) {
           SCVServiceGrpc.getNewSCVMethod = getNewSCVMethod =
-              io.grpc.MethodDescriptor.<com.bnpinnovation.proto.ScvInfo.SCV, com.google.protobuf.Empty>newBuilder()
+              io.grpc.MethodDescriptor.<com.bnpinnovation.proto.ScvInfo.SCVRequest, com.google.protobuf.Empty>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "NewSCV"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.bnpinnovation.proto.ScvInfo.SCV.getDefaultInstance()))
+                  com.bnpinnovation.proto.ScvInfo.SCVRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.google.protobuf.Empty.getDefaultInstance()))
               .setSchemaDescriptor(new SCVServiceMethodDescriptorSupplier("NewSCV"))
@@ -46,28 +46,28 @@ public final class SCVServiceGrpc {
   }
 
   private static volatile io.grpc.MethodDescriptor<com.google.protobuf.Empty,
-      com.bnpinnovation.proto.ScvInfo.SCV> getGetSCVMethod;
+      com.bnpinnovation.proto.ScvInfo.SCVResponse> getGetSCVMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetSCV",
       requestType = com.google.protobuf.Empty.class,
-      responseType = com.bnpinnovation.proto.ScvInfo.SCV.class,
+      responseType = com.bnpinnovation.proto.ScvInfo.SCVResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<com.google.protobuf.Empty,
-      com.bnpinnovation.proto.ScvInfo.SCV> getGetSCVMethod() {
-    io.grpc.MethodDescriptor<com.google.protobuf.Empty, com.bnpinnovation.proto.ScvInfo.SCV> getGetSCVMethod;
+      com.bnpinnovation.proto.ScvInfo.SCVResponse> getGetSCVMethod() {
+    io.grpc.MethodDescriptor<com.google.protobuf.Empty, com.bnpinnovation.proto.ScvInfo.SCVResponse> getGetSCVMethod;
     if ((getGetSCVMethod = SCVServiceGrpc.getGetSCVMethod) == null) {
       synchronized (SCVServiceGrpc.class) {
         if ((getGetSCVMethod = SCVServiceGrpc.getGetSCVMethod) == null) {
           SCVServiceGrpc.getGetSCVMethod = getGetSCVMethod =
-              io.grpc.MethodDescriptor.<com.google.protobuf.Empty, com.bnpinnovation.proto.ScvInfo.SCV>newBuilder()
+              io.grpc.MethodDescriptor.<com.google.protobuf.Empty, com.bnpinnovation.proto.ScvInfo.SCVResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetSCV"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.google.protobuf.Empty.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.bnpinnovation.proto.ScvInfo.SCV.getDefaultInstance()))
+                  com.bnpinnovation.proto.ScvInfo.SCVResponse.getDefaultInstance()))
               .setSchemaDescriptor(new SCVServiceMethodDescriptorSupplier("GetSCV"))
               .build();
         }
@@ -126,7 +126,7 @@ public final class SCVServiceGrpc {
 
     /**
      */
-    public void newSCV(com.bnpinnovation.proto.ScvInfo.SCV request,
+    public void newSCV(com.bnpinnovation.proto.ScvInfo.SCVRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getNewSCVMethod(), responseObserver);
     }
@@ -134,7 +134,7 @@ public final class SCVServiceGrpc {
     /**
      */
     public void getSCV(com.google.protobuf.Empty request,
-        io.grpc.stub.StreamObserver<com.bnpinnovation.proto.ScvInfo.SCV> responseObserver) {
+        io.grpc.stub.StreamObserver<com.bnpinnovation.proto.ScvInfo.SCVResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetSCVMethod(), responseObserver);
     }
 
@@ -144,7 +144,7 @@ public final class SCVServiceGrpc {
             getNewSCVMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                com.bnpinnovation.proto.ScvInfo.SCV,
+                com.bnpinnovation.proto.ScvInfo.SCVRequest,
                 com.google.protobuf.Empty>(
                   this, METHODID_NEW_SCV)))
           .addMethod(
@@ -152,7 +152,7 @@ public final class SCVServiceGrpc {
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 com.google.protobuf.Empty,
-                com.bnpinnovation.proto.ScvInfo.SCV>(
+                com.bnpinnovation.proto.ScvInfo.SCVResponse>(
                   this, METHODID_GET_SCV)))
           .build();
     }
@@ -174,7 +174,7 @@ public final class SCVServiceGrpc {
 
     /**
      */
-    public void newSCV(com.bnpinnovation.proto.ScvInfo.SCV request,
+    public void newSCV(com.bnpinnovation.proto.ScvInfo.SCVRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getNewSCVMethod(), getCallOptions()), request, responseObserver);
@@ -183,7 +183,7 @@ public final class SCVServiceGrpc {
     /**
      */
     public void getSCV(com.google.protobuf.Empty request,
-        io.grpc.stub.StreamObserver<com.bnpinnovation.proto.ScvInfo.SCV> responseObserver) {
+        io.grpc.stub.StreamObserver<com.bnpinnovation.proto.ScvInfo.SCVResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetSCVMethod(), getCallOptions()), request, responseObserver);
     }
@@ -205,14 +205,14 @@ public final class SCVServiceGrpc {
 
     /**
      */
-    public com.google.protobuf.Empty newSCV(com.bnpinnovation.proto.ScvInfo.SCV request) {
+    public com.google.protobuf.Empty newSCV(com.bnpinnovation.proto.ScvInfo.SCVRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getNewSCVMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public com.bnpinnovation.proto.ScvInfo.SCV getSCV(com.google.protobuf.Empty request) {
+    public com.bnpinnovation.proto.ScvInfo.SCVResponse getSCV(com.google.protobuf.Empty request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetSCVMethod(), getCallOptions(), request);
     }
@@ -235,14 +235,14 @@ public final class SCVServiceGrpc {
     /**
      */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty> newSCV(
-        com.bnpinnovation.proto.ScvInfo.SCV request) {
+        com.bnpinnovation.proto.ScvInfo.SCVRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getNewSCVMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.bnpinnovation.proto.ScvInfo.SCV> getSCV(
+    public com.google.common.util.concurrent.ListenableFuture<com.bnpinnovation.proto.ScvInfo.SCVResponse> getSCV(
         com.google.protobuf.Empty request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetSCVMethod(), getCallOptions()), request);
@@ -270,12 +270,12 @@ public final class SCVServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_NEW_SCV:
-          serviceImpl.newSCV((com.bnpinnovation.proto.ScvInfo.SCV) request,
+          serviceImpl.newSCV((com.bnpinnovation.proto.ScvInfo.SCVRequest) request,
               (io.grpc.stub.StreamObserver<com.google.protobuf.Empty>) responseObserver);
           break;
         case METHODID_GET_SCV:
           serviceImpl.getSCV((com.google.protobuf.Empty) request,
-              (io.grpc.stub.StreamObserver<com.bnpinnovation.proto.ScvInfo.SCV>) responseObserver);
+              (io.grpc.stub.StreamObserver<com.bnpinnovation.proto.ScvInfo.SCVResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();

@@ -1,6 +1,7 @@
 package com.bnpinnovation.protobuf.dto;
 
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 
 public interface SCVDto {
@@ -10,5 +11,13 @@ public interface SCVDto {
         String username;
         String password;
         String email;
+    }
+
+    @ToString
+    @RequiredArgsConstructor
+    @Getter
+    public class Response {
+        final String username;
+        final String email;
     }
 }
